@@ -3,11 +3,11 @@ from flask import Flask, jsonify, render_template, request
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
 
-# Official Apple Store CDN Image base domains
+# Public CDN Image base domains
 CDN_BASE = "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/"
 CDN_BASE_ALT = "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/"
 
-# Official Apple Support 108044 iPhone Dataset
+# iPhone Dataset (Derived from public technical documentation support 108044)
 IPHONE_DATASET = [
     {
         "id": "iphone-17-pro-max",
@@ -385,7 +385,7 @@ def home():
 
 @app.route('/api/phones', methods=['GET'])
 def get_phones():
-    """Return list of all official Apple iPhone models with specs and prices."""
+    """Return list of all iPhone models with specs and market prices."""
     return jsonify({
         "status": "success",
         "count": len(IPHONE_DATASET),

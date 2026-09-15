@@ -1,25 +1,33 @@
-# 📱 iPhone Affordability Calculator & Apple Studio Showcase
+# 📱 iPhone Affordability Calculator & Spec Guide
 
-A modern, responsive web application built with **Python Flask** (RESTful JSON APIs) and **Vanilla JavaScript / HTML5 / CSS3** (Frontend). 
+A modern, responsive web application built with **Python Flask** (RESTful JSON APIs) and **Vanilla JavaScript / HTML5 / CSS3** (Frontend).
 
-This project showcases the complete lineup of official Apple iPhone models—sourced directly from [Apple Support Article 108044](https://support.apple.com/en-in/108044)—and features a **Smart Financial Affordability Advisor** that helps buyers determine which iPhone model they can comfortably afford without financial strain.
+This independent educational tool allows users to explore iPhone model specifications—derived from publicly available technical documentation such as [Apple Support Article 108044](https://support.apple.com/en-in/108044)—and features a **Smart Financial Affordability Advisor** to help users determine which model fits within their personal budget.
+
+---
+
+> ### ⚠️ Legal Disclaimer
+> This repository and application are an **independent open-source educational utility** created solely for personal budgeting and smartphone specification comparison.
+>
+> - **No Affiliation**: This project is **NOT affiliated with, endorsed by, sponsored by, or associated with Apple Inc.**
+> - **Trademarks**: *Apple*, *iPhone*, *Super Retina*, *Dynamic Island*, *Retina*, *Touch ID*, and related product names are registered trademarks of **Apple Inc.**
+> - All product names, logos, brands, and trademarks referenced in this repository belong to their respective trademark owners.
 
 ---
 
 ## ✨ Features
 
-- 🍎 **Complete Official Apple Catalog**: Sourced directly from Apple Support Article 108044 (iPhone 17 series, iPhone Air, iPhone 16 series, 15 series, 14 series, 13 series, and iPhone SE).
-- 🖼️ **Official Apple Store CDN Renders**: 100% authentic product imagery served directly from `store.storeimages.cdn-apple.com`.
+- 📱 **Public Model Specifications**: Includes specs derived from public Apple Support Article 108044 (iPhone 17 series, iPhone Air, iPhone 16 series, 15 series, 14 series, 13 series, and iPhone SE).
 - 💰 **Smart Financial Affordability Advisor**:
   - **1-Click Salary Presets**: Test `₹50k`, `₹1 Lakh`, and `₹2 Lakh` monthly income scenarios instantly.
-  - **Safe 10% EMI Limit Metric**: Calculates maximum monthly EMI threshold (10% of net monthly income).
+  - **Safe 10% EMI Limit Metric**: Calculates maximum recommended monthly EMI threshold (10% of net monthly income).
   - **Color-Coded Status Tiers**:
     - 🟢 **Zero Financial Burden**: Cash purchase or monthly EMI $\le$ 7% of income.
     - 🟡 **Moderate Stretch**: Monthly EMI between 7% and 15% of income.
     - 🔴 **High Financial Burden**: Monthly EMI > 15% of income (not recommended).
 - 🔍 **Dynamic Filtering & Sorting**: Filter by generation/series, search by model/chipset, and sort by Price or Battery capacity (mAh).
 - 📊 **Spec Matrix Comparison**: Side-by-side spec viewer (RAM, Storage, Battery, Display, Chipset).
-- 🎨 **Apple Metallic Dark Design**: Glassmorphism navigation bar, responsive flex/grid layouts, and dark/light theme toggle.
+- 🎨 **Responsive Dark Design**: Glassmorphism navigation bar, responsive flex/grid layouts, and dark/light theme toggle.
 
 ---
 
@@ -34,17 +42,17 @@ This project showcases the complete lineup of official Apple iPhone models—sou
 ## 📁 Project Structure
 
 ```text
-Test_News/
+iPhone_affordability_calculator/
 ├── app.py                  # Main Flask application & REST API routes
-├── Apple_phones.txt        # Structured text file with official Apple phone specs & prices
+├── Apple_phones.txt        # Structured text file with iPhone model specs & prices
 ├── requirements.txt        # Python dependencies (flask)
 ├── .gitignore              # Git ignore configuration
-├── README.md               # Project documentation
+├── README.md               # Project documentation & Legal Disclaimer
 ├── templates/
 │   └── index.html          # HTML5 single-page application template
 └── static/
     ├── css/
-    │   └── styles.css      # Apple-inspired CSS stylesheet & responsive styles
+    │   └── styles.css      # Custom CSS stylesheet & responsive layout
     └── js/
         └── app.js          # Vanilla JS frontend application logic & REST API client
 ```
@@ -85,7 +93,7 @@ Navigate to **`http://127.0.0.1:5050`** in your web browser.
 ## 📡 RESTful JSON APIs
 
 ### 1. `GET /api/phones`
-Returns the complete dataset of official Apple iPhone models with pricing, specifications, and image URLs.
+Returns the dataset of iPhone models with pricing, specifications, and image URLs.
 
 **Sample Response**:
 ```json
@@ -104,8 +112,7 @@ Returns the complete dataset of official Apple iPhone models with pricing, speci
       "chipset": "A18 Pro",
       "display": "6.9-inch Super Retina XDR",
       "generation": "16 Series (2024)",
-      "badge": "Desert Titanium",
-      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-pro-finish-select-202409-6-9inch-deserttitanium?wid=1000&hei=1000&fmt=jpeg&qlt=95"
+      "badge": "Desert Titanium"
     }
   ]
 }
@@ -123,33 +130,11 @@ Calculates affordability tiers for all models based on user input.
 }
 ```
 
-**Sample Response**:
-```json
-{
-  "status": "success",
-  "inputs": {
-    "monthly_salary": 75000,
-    "cash_available": 40000,
-    "emi_tenure_months": 12
-  },
-  "summary": {
-    "total_models": 23,
-    "zero_burden_count": 8,
-    "moderate_burden_count": 6,
-    "high_burden_count": 9,
-    "top_recommended_model": "iPhone 16"
-  },
-  "models": [...]
-}
-```
-
 ---
 
 ## 🧮 Financial Methodology & Rules Used
 
-The financial calculations adhere to standard financial planning principles:
-
-1. **50/30/20 Rule**: Discretionary luxury purchases (like smartphones) belong to the 30% "Wants" category and should never drain emergency savings or essential funds.
+1. **50/30/20 Rule**: Discretionary luxury purchases belong to the 30% "Wants" category and should never drain emergency savings or essential funds.
 2. **10% Income EMI Threshold**: Total monthly phone EMI should not exceed **10% to 15% of net monthly income**.
 3. **1.5x Income Rule**: Total smartphone cost should not exceed **1.5x your monthly net income**.
 
