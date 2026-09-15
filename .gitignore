@@ -1,0 +1,33 @@
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# IDE & Editor Configs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS System Files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Flask & Runtime Logs
+*.log
+instance/
+.webassets-cache
+
+# Antigravity temporary scratch files
+scratch/

@@ -1,0 +1,234 @@
+================================================================================
+          OFFICIAL APPLE IPHONE MODELS (SOURCED FROM APPLE SUPPORT 108044)
+================================================================================
+
+1. iPhone 17 Pro Max
+   - Year Introduced: 2025
+   - Price: ₹1,44,900
+   - RAM: 12 GB
+   - Internal Memory: 256GB / 512GB / 1TB / 2TB
+   - Battery Capacity: 4,832 mAh
+   - Display: 6.9-inch Super Retina XDR OLED (Dynamic Island)
+   - Colours: Silver, Cosmic Orange, Deep Blue
+   - Model Numbers: A3257, A3525, A3527, A3526
+
+2. iPhone 17 Pro
+   - Year Introduced: 2025
+   - Price: ₹1,29,900
+   - RAM: 12 GB
+   - Internal Memory: 256GB / 512GB / 1TB
+   - Battery Capacity: 3,750 mAh
+   - Display: 6.3-inch Super Retina XDR OLED (Dynamic Island)
+   - Colours: Silver, Cosmic Orange, Deep Blue
+   - Model Numbers: A3256, A3522, A3524, A3523
+
+3. iPhone Air
+   - Year Introduced: 2025
+   - Price: ₹1,49,900
+   - RAM: 12 GB
+   - Internal Memory: 256GB / 512GB / 1TB
+   - Battery Capacity: 3,950 mAh
+   - Display: 6.5-inch Super Retina XDR OLED (5.6mm Ultra-Slim Titanium)
+   - Colours: Space Black, Cloud White, Light Gold, Sky Blue
+   - Model Numbers: A3260, A3516, A3518, A3517
+
+4. iPhone 17
+   - Year Introduced: 2025
+   - Price: ₹99,900
+   - RAM: 8 GB
+   - Internal Memory: 256GB / 512GB
+   - Battery Capacity: 3,650 mAh
+   - Display: 6.3-inch Super Retina XDR OLED (120Hz ProMotion)
+   - Colours: Black, White, Mist Blue, Sage, Lavender
+   - Model Numbers: A3258, A3519, A3521, A3520
+
+5. iPhone 17e
+   - Year Introduced: 2026
+   - Price: ₹79,900
+   - RAM: 8 GB
+   - Internal Memory: 256GB / 512GB
+   - Battery Capacity: 3,450 mAh
+   - Display: 6.1-inch Super Retina XDR OLED
+   - Colours: Black, White, Soft Pink
+   - Model Numbers: A3575, A3635, A3634
+
+6. iPhone 16 Pro Max
+   - Year Introduced: 2024
+   - Price: ₹1,34,900
+   - RAM: 8 GB
+   - Internal Memory: 256GB / 512GB / 1TB
+   - Battery Capacity: 4,685 mAh
+   - Display: 6.9-inch Super Retina XDR OLED (Dynamic Island)
+   - Colours: Black Titanium, White Titanium, Natural Titanium, Desert Titanium
+   - Model Numbers: A3084, A3295, A3297, A3296
+
+7. iPhone 16 Pro
+   - Year Introduced: 2024
+   - Price: ₹1,19,900
+   - RAM: 8 GB
+   - Internal Memory: 128GB / 256GB / 512GB / 1TB
+   - Battery Capacity: 3,582 mAh
+   - Display: 6.3-inch Super Retina XDR OLED (Dynamic Island)
+   - Colours: Black Titanium, White Titanium, Natural Titanium, Desert Titanium
+   - Model Numbers: A3083, A3292, A3294, A3293
+
+8. iPhone 16 Plus
+   - Year Introduced: 2024
+   - Price: ₹89,900
+   - RAM: 8 GB
+   - Internal Memory: 128GB / 256GB / 512GB
+   - Battery Capacity: 4,674 mAh
+   - Display: 6.7-inch Super Retina XDR OLED (Dynamic Island)
+   - Colours: Black, White, Pink, Teal, Ultramarine
+   - Model Numbers: A3082, A3289, A3291, A3290
+
+9. iPhone 16
+   - Year Introduced: 2024
+   - Price: ₹79,900
+   - RAM: 8 GB
+   - Internal Memory: 128GB / 256GB / 512GB
+   - Battery Capacity: 3,561 mAh
+   - Display: 6.1-inch Super Retina XDR OLED (Dynamic Island)
+   - Colours: Black, White, Pink, Teal, Ultramarine
+   - Model Numbers: A3081, A3286, A3288, A3287
+
+10. iPhone 16e
+    - Year Introduced: 2025
+    - Price: ₹59,900
+    - RAM: 8 GB
+    - Internal Memory: 128GB / 256GB / 512GB
+    - Battery Capacity: 3,400 mAh
+    - Display: 6.1-inch Super Retina XDR OLED
+    - Colours: Black, White
+    - Model Numbers: A3212, A3408, A3410, A3409
+
+11. iPhone 15 Pro Max
+    - Year Introduced: 2023
+    - Price: ₹1,59,900
+    - RAM: 8 GB
+    - Internal Memory: 256GB / 512GB / 1TB
+    - Battery Capacity: 4,441 mAh
+    - Display: 6.7-inch Super Retina XDR OLED (Dynamic Island)
+    - Colours: Black Titanium, White Titanium, Blue Titanium, Natural Titanium
+    - Model Numbers: A2849, A3105, A3108, A3106
+
+12. iPhone 15 Pro
+    - Year Introduced: 2023
+    - Price: ₹1,34,900
+    - RAM: 8 GB
+    - Internal Memory: 128GB / 256GB / 512GB / 1TB
+    - Battery Capacity: 3,274 mAh
+    - Display: 6.1-inch Super Retina XDR OLED (Dynamic Island)
+    - Colours: Black Titanium, White Titanium, Blue Titanium, Natural Titanium
+    - Model Numbers: A2848, A3101, A3104, A3102
+
+13. iPhone 15 Plus
+    - Year Introduced: 2023
+    - Price: ₹73,999
+    - RAM: 6 GB
+    - Internal Memory: 128GB / 256GB / 512GB
+    - Battery Capacity: 4,383 mAh
+    - Display: 6.7-inch Super Retina XDR OLED (Dynamic Island)
+    - Colours: Black, Blue, Green, Yellow, Pink
+    - Model Numbers: A2847, A3093, A3096, A3094
+
+14. iPhone 15
+    - Year Introduced: 2023
+    - Price: ₹55,400
+    - RAM: 6 GB
+    - Internal Memory: 128GB / 256GB / 512GB
+    - Battery Capacity: 3,349 mAh
+    - Display: 6.1-inch Super Retina XDR OLED (Dynamic Island)
+    - Colours: Black, Blue, Green, Yellow, Pink
+    - Model Numbers: A2846, A3089, A3092, A3090
+
+15. iPhone 14 Pro Max
+    - Year Introduced: 2022
+    - Price: ₹1,39,900
+    - RAM: 6 GB
+    - Internal Memory: 128GB / 256GB / 512GB / 1TB
+    - Battery Capacity: 4,323 mAh
+    - Display: 6.7-inch Super Retina XDR OLED (Dynamic Island)
+    - Colours: Silver, Gold, Space Black, Deep Purple
+    - Model Numbers: A2651, A2893, A2896, A2895, A2894
+
+16. iPhone 14 Pro
+    - Year Introduced: 2022
+    - Price: ₹1,29,900
+    - RAM: 6 GB
+    - Internal Memory: 128GB / 256GB / 512GB / 1TB
+    - Battery Capacity: 3,200 mAh
+    - Display: 6.1-inch Super Retina XDR OLED (Dynamic Island)
+    - Colours: Silver, Gold, Space Black, Deep Purple
+    - Model Numbers: A2650, A2889, A2892, A2891, A2890
+
+17. iPhone 14 Plus
+    - Year Introduced: 2022
+    - Price: ₹66,999
+    - RAM: 6 GB
+    - Internal Memory: 128GB / 256GB / 512GB
+    - Battery Capacity: 4,325 mAh
+    - Display: 6.7-inch Super Retina XDR OLED
+    - Colours: Midnight, Starlight, (PRODUCT)RED, Blue, Purple, Yellow
+    - Model Numbers: A2632, A2885, A2888, A2887, A2886
+
+18. iPhone 14
+    - Year Introduced: 2022
+    - Price: ₹57,900
+    - RAM: 6 GB
+    - Internal Memory: 128GB / 256GB / 512GB
+    - Battery Capacity: 3,279 mAh
+    - Display: 6.1-inch Super Retina XDR OLED
+    - Colours: Midnight, Starlight, (PRODUCT)RED, Blue, Purple, Yellow
+    - Model Numbers: A2649, A2881, A2884, A2883, A2882
+
+19. iPhone 13 Pro Max
+    - Year Introduced: 2021
+    - Price: ₹1,19,900
+    - RAM: 6 GB
+    - Internal Memory: 128GB / 256GB / 512GB / 1TB
+    - Battery Capacity: 4,352 mAh
+    - Display: 6.7-inch Super Retina XDR OLED (ProMotion)
+    - Colours: Graphite, Gold, Silver, Sierra Blue, Alpine Green
+    - Model Numbers: A2484, A2641, A2644, A2645, A2643
+
+20. iPhone 13 Pro
+    - Year Introduced: 2021
+    - Price: ₹1,09,900
+    - RAM: 6 GB
+    - Internal Memory: 128GB / 256GB / 512GB / 1TB
+    - Battery Capacity: 3,095 mAh
+    - Display: 6.1-inch Super Retina XDR OLED (ProMotion)
+    - Colours: Graphite, Gold, Silver, Sierra Blue, Alpine Green
+    - Model Numbers: A2483, A2636, A2639, A2640, A2638
+
+21. iPhone 13
+    - Year Introduced: 2021
+    - Price: ₹39,994
+    - RAM: 4 GB
+    - Internal Memory: 128GB / 256GB / 512GB
+    - Battery Capacity: 3,227 mAh
+    - Display: 6.1-inch Super Retina XDR OLED
+    - Colours: (PRODUCT)RED, Starlight, Midnight, Blue, Pink, Green
+    - Model Numbers: A2482, A2631, A2634, A2635, A2633
+
+22. iPhone 13 mini
+    - Year Introduced: 2021
+    - Price: ₹49,900
+    - RAM: 4 GB
+    - Internal Memory: 128GB / 256GB / 512GB
+    - Battery Capacity: 2,406 mAh
+    - Display: 5.4-inch Super Retina XDR OLED
+    - Colours: (PRODUCT)RED, Starlight, Midnight, Blue, Pink, Green
+    - Model Numbers: A2481, A2626, A2629, A2630, A2628
+
+23. iPhone SE (3rd generation)
+    - Year Introduced: 2022
+    - Price: ₹45,990
+    - RAM: 4 GB
+    - Internal Memory: 64GB / 128GB / 256GB
+    - Battery Capacity: 2,018 mAh
+    - Display: 4.7-inch Retina HD (Touch ID)
+    - Colours: (PRODUCT)RED, Starlight, Midnight
+    - Model Numbers: A2595, A2782, A2784, A2785, A2783
+================================================================================

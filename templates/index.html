@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple iPhone Lineup & Smart Affordability Advisor</title>
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body class="dark-theme">
+
+    <!-- Header / Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand">
+                <i class="fa-brands fa-apple logo-icon"></i>
+                <span class="brand-text">iPhone Studio</span>
+                <span class="version-tag">2026 Edition</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#showcase" class="nav-link active"><i class="fa-solid fa-mobile-screen"></i> iPhone Lineup</a>
+                <a href="#calculator" class="nav-link"><i class="fa-solid fa-calculator"></i> Affordability Advisor</a>
+                <a href="#compare" class="nav-link" onclick="openCompareModal()"><i class="fa-solid fa-code-compare"></i> Quick Compare Matrix</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="themeToggleBtn" class="btn-icon" title="Toggle Light/Dark Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <span class="hero-tag"><i class="fa-solid fa-sparkles"></i> 2026 Complete Apple Lineup (iPhone Duo, 18, 17, 16 & 15 Series)</span>
+            <h1 class="hero-title">Explore iPhones & Smart Financial Planning</h1>
+            <p class="hero-subtitle">Discover Apple iPhone models ranked from latest high-value flagships down to classic performers, with real-time financial affordability guidance tailored to your salary.</p>
+            <div class="hero-buttons">
+                <a href="#showcase" class="btn btn-primary"><i class="fa-solid fa-grid-2"></i> Browse Lineup</a>
+                <a href="#calculator" class="btn btn-glass"><i class="fa-solid fa-chart-line"></i> Calculate My Affordability</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Container -->
+    <main class="main-container">
+
+        <!-- SECTION 1: IPHONE SHOWCASE -->
+        <section id="showcase" class="section-container">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title"><i class="fa-brands fa-apple"></i> Apple iPhone Store Showcase</h2>
+                    <p class="section-subtitle">Ranked from latest flagship high value to previous generation models</p>
+                </div>
+
+                <!-- Controls & Filters -->
+                <div class="controls-wrapper">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" id="searchInput" placeholder="Search model or chip (e.g. Duo, 18 Pro, 17)..." onkeyup="filterShowcase()">
+                    </div>
+                    <div class="select-box">
+                        <select id="genFilter" onchange="filterShowcase()">
+                            <option value="all">All iPhone Generations</option>
+                            <option value="17">17 Series & iPhone Air</option>
+                            <option value="16">16 Series & 16e</option>
+                            <option value="15">15 Series</option>
+                            <option value="14">14 Series</option>
+                            <option value="13">13 Series & SE</option>
+                        </select>
+                    </div>
+                    <div class="select-box">
+                        <select id="sortSelect" onchange="filterShowcase()">
+                            <option value="rank">Order: Latest High Value to Low</option>
+                            <option value="price-desc">Price: High to Low</option>
+                            <option value="price-asc">Price: Low to High</option>
+                            <option value="battery">Battery: Max mAh First</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phone Showcase Grid -->
+            <div id="phoneGrid" class="phone-grid">
+                <div class="loading-spinner">
+                    <i class="fa-solid fa-circle-notch fa-spin"></i>
+                    <p>Loading Apple iPhone lineup...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: SMART AFFORDABILITY CALCULATOR -->
+        <section id="calculator" class="section-container calculator-section">
+            <div class="calculator-card">
+                <div class="calculator-header">
+                    <div class="badge-icon"><i class="fa-solid fa-wallet"></i></div>
+                    <div>
+                        <h2 class="section-title">Smart iPhone Affordability Advisor</h2>
+                        <p class="section-subtitle">Input your monthly income and savings to discover which iPhones you can buy without financial stress.</p>
+                    </div>
+                </div>
+
+                <div class="calculator-body">
+                    <!-- Quick Preset Buttons -->
+                    <div class="preset-wrapper">
+                        <span class="preset-label"><i class="fa-solid fa-bolt"></i> Quick Salary Presets:</span>
+                        <button type="button" class="btn-preset" onclick="applyPreset(50000, 25000)">₹50k Salary</button>
+                        <button type="button" class="btn-preset" onclick="applyPreset(100000, 60000)">₹1 Lakh Salary</button>
+                        <button type="button" class="btn-preset" onclick="applyPreset(200000, 150000)">₹2 Lakh Salary</button>
+                    </div>
+
+                    <form id="affordabilityForm" onsubmit="calculateAffordability(event)">
+                        <div class="form-grid">
+                            <!-- Monthly Salary -->
+                            <div class="form-group">
+                                <label for="salaryInput"><i class="fa-solid fa-indian-rupee-sign"></i> Net Monthly Salary (₹)</label>
+                                <input type="number" id="salaryInput" placeholder="e.g. 75000" min="10000" step="1000" value="75000" required>
+                                <small class="form-hint">Your take-home monthly income after taxes</small>
+                            </div>
+
+                            <!-- Cash Savings Available -->
+                            <div class="form-group">
+                                <label for="cashInput"><i class="fa-solid fa-piggy-bank"></i> Available Cash Savings (₹)</label>
+                                <input type="number" id="cashInput" placeholder="e.g. 50000" min="0" step="1000" value="50000" required>
+                                <small class="form-hint">Upfront savings allocated for purchase</small>
+                            </div>
+
+                            <!-- Preferred EMI Tenure -->
+                            <div class="form-group">
+                                <label><i class="fa-solid fa-calendar-days"></i> Preferred EMI Tenure (Months)</label>
+                                <div class="tenure-options">
+                                    <button type="button" class="tenure-btn" data-months="6" onclick="setTenure(6)">6 Mos</button>
+                                    <button type="button" class="tenure-btn active" data-months="12" onclick="setTenure(12)">12 Mos</button>
+                                    <button type="button" class="tenure-btn" data-months="18" onclick="setTenure(18)">18 Mos</button>
+                                    <button type="button" class="tenure-btn" data-months="24" onclick="setTenure(24)">24 Mos</button>
+                                </div>
+                                <input type="hidden" id="tenureInput" value="12">
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fa-solid fa-calculator"></i> Calculate My Affordability
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Calculator Output Container -->
+                <div id="calculatorResults" class="calculator-results hidden">
+                    <hr class="divider">
+                    
+                    <!-- Health Summary Banner -->
+                    <div class="health-summary-banner">
+                        <div class="summary-stat">
+                            <span class="stat-label">Monthly Income</span>
+                            <span class="stat-value" id="resIncome">₹0</span>
+                        </div>
+                        <div class="summary-stat">
+                            <span class="stat-label">Available Cash</span>
+                            <span class="stat-value" id="resCash">₹0</span>
+                        </div>
+                        <div class="summary-stat">
+                            <span class="stat-label">Safe Monthly EMI Limit (10%)</span>
+                            <span class="stat-value highlight" id="resSafeEmiLimit">₹0/mo</span>
+                        </div>
+                    </div>
+
+                    <!-- Financial Guidelines Alert Card -->
+                    <div class="financial-rule-box">
+                        <h4><i class="fa-solid fa-shield-halved"></i> Smart Financial Rules (50/30/20 & 10% Income EMI Cap)</h4>
+                        <p>Financial planners recommend that phone EMIs should not exceed <strong>10% to 15% of your net monthly income</strong>. A smartphone is a depreciating asset and should ideally cost less than <strong>1.5x your monthly income</strong>.</p>
+                    </div>
+
+                    <!-- Category Tabs for Recommendations -->
+                    <div class="results-tabs">
+                        <button class="tab-btn active" onclick="filterResults('all')">
+                            All Models (<span id="countAll">0</span>)
+                        </button>
+                        <button class="tab-btn tab-success" onclick="filterResults('SAFE')">
+                            <i class="fa-solid fa-circle-check"></i> Zero Burden (<span id="countSafe">0</span>)
+                        </button>
+                        <button class="tab-btn tab-warning" onclick="filterResults('MODERATE')">
+                            <i class="fa-solid fa-triangle-exclamation"></i> Moderate Stretch (<span id="countModerate">0</span>)
+                        </button>
+                        <button class="tab-btn tab-danger" onclick="filterResults('HIGH')">
+                            <i class="fa-solid fa-circle-xmark"></i> High Burden (<span id="countHigh">0</span>)
+                        </button>
+                    </div>
+
+                    <!-- Result Cards Grid -->
+                    <div id="affordabilityGrid" class="affordability-grid">
+                        <!-- Calculated cards injected by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Comparison Modal -->
+    <div id="compareModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-code-compare"></i> Full Apple iPhone Specification Matrix</h3>
+                <button class="modal-close" onclick="closeCompareModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="table-responsive">
+                    <table class="spec-table">
+                        <thead>
+                            <tr>
+                                <th>Model</th>
+                                <th>Starting Price</th>
+                                <th>RAM</th>
+                                <th>Internal Storage</th>
+                                <th>Battery Capacity</th>
+                                <th>Chipset</th>
+                                <th>Display</th>
+                            </tr>
+                        </thead>
+                        <tbody id="compareTableBody">
+                            <!-- Populated dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p><i class="fa-brands fa-apple"></i> Apple iPhone Studio & Smart Affordability Advisor</p>
+            <p class="footer-subtext">Prices sourced from official Indian retail channels and Apple Store India. Specs derived from official technical documentation.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript App -->
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
